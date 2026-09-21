@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="GlassAuth — a modern, responsive glassmorphism Login & Signup UI built with HTML, CSS and vanilla JavaScript.">
+
+<title>GlassAuth — Login</title>
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<section class="hero">
+
+    <div class="auth-card">
+
+    <h1>Login</h1>
+
+    <p>Welcome back! Please login to your account.</p>
+
+    <form id="login-form" novalidate>
+
+        <div class="input-box">
+            <input type="text" id="username" name="username" placeholder="Username or email" autocomplete="username">
+            <i class="fa-regular fa-user"></i>
+            <span class="error-msg" id="username-error"></span>
+        </div>
+
+        <div class="input-box">
+            <input type="password" id="password" name="password" placeholder="Password" autocomplete="current-password">
+            <i class="fa-regular fa-eye toggle-password" title="Show / hide password"></i>
+            <span class="error-msg" id="password-error"></span>
+        </div>
+
+        <div class="options">
+            <label class="remember">
+                <input type="checkbox" id="remember-me">
+                Remember Me
+            </label>
+            <a href="#" class="forgot-link" id="forgot-link">Forgot Password?</a>
+        </div>
+
+        <button type="submit" class="auth-btn">
+            Login
+        </button>
+
+    </form>
+
+    <p class="signup-text">
+    Don't have an account?
+    <a href="signup.html">Signup</a>
+</p>
+
+</div>
+
+</section>
+
+<!-- Forgot Password Modal -->
+<div class="modal-overlay" id="forgot-modal">
+    <div class="modal-card">
+        <h2>Reset Password</h2>
+        <p>Enter your email and we'll send you a reset link.</p>
+        <form id="forgot-form" novalidate>
+            <div class="input-box">
+                <input type="email" id="forgot-email" placeholder="Your email address">
+                <i class="fa-regular fa-envelope"></i>
+                <span class="error-msg" id="forgot-email-error"></span>
+            </div>
+            <button type="submit" class="auth-btn">Send Reset Link</button>
+        </form>
+        <button class="modal-close" id="forgot-close" title="Close">&times;</button>
+    </div>
+</div>
+
+<!-- Toast notification -->
+<div class="toast" id="toast"></div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
