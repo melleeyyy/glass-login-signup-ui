@@ -62,8 +62,7 @@ glass-login-signup-ui/
 ├── signup.html     → Signup page
 ├── style.css       → All styling (glassmorphism + responsive)
 ├── script.js       → All interactive logic
-├── background.jpg  → Background photo (original)
-└── background.svg  → Lightweight vector alternative background
+└── background.jpg  → Background photo
 ```
 
 ---
@@ -95,7 +94,7 @@ Then visit `http://localhost:8080`.
 ## Customization
 
 - **Colors** — the accent gradient lives in `.auth-btn` in `style.css` (`linear-gradient(90deg, #a6ce39, #3d6d0c)`).
-- **Background** — the site uses `background.jpg` (the original photo). A tiny vector version `background.svg` is also included; to switch to it, change the `background-image` URL in `.hero` from `background.jpg` to `background.svg`. You can also use any JPG/PNG/SVG of your own — just update the URL.
+- **Background** — the site uses `background.jpg` (the original photo). To change it, replace the file or update the `background-image` URL in `.hero` in `style.css`. Any JPG/PNG/SVG of your own works — just update the URL.
 - **Card blur** — tweak `backdrop-filter: blur(18px)` on `.auth-card`.
 - **Validation rules** — all rules are in plain functions at the top of `script.js`.
 
