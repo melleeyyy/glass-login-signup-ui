@@ -12,7 +12,7 @@ jobs:
   add-background:
     runs-on: ubuntu-latest
     # Skip when triggered by our own commit (prevents a loop).
-    if: ${{ !contains(github.event.head_commit.message, 'chore: add original background image') }}
+    if: "${{ !contains(github.event.head_commit.message, 'chore: add original background image') }}"
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
