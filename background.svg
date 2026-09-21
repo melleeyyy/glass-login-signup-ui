@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 736 1308" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8ec9e8"/>
+      <stop offset="0.55" stop-color="#cfe9f5"/>
+      <stop offset="1" stop-color="#f2f7e8"/>
+    </linearGradient>
+    <linearGradient id="field" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#7cb342"/>
+      <stop offset="1" stop-color="#33691e"/>
+    </linearGradient>
+    <linearGradient id="hill1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9ccc65"/>
+      <stop offset="1" stop-color="#689f38"/>
+    </linearGradient>
+    <radialGradient id="sun" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#fff9c4" stop-opacity="0.95"/>
+      <stop offset="0.5" stop-color="#fff59d" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#fff59d" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="trunk" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#5d4037"/>
+      <stop offset="1" stop-color="#3e2723"/>
+    </linearGradient>
+    <linearGradient id="leafA" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#66bb6a"/>
+      <stop offset="1" stop-color="#2e7d32"/>
+    </linearGradient>
+    <linearGradient id="leafB" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#81c784"/>
+      <stop offset="1" stop-color="#388e3c"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Sky -->
+  <rect width="736" height="1308" fill="url(#sky)"/>
+
+  <!-- Sun glow -->
+  <circle cx="520" cy="300" r="220" fill="url(#sun)"/>
+
+  <!-- Clouds -->
+  <g fill="#ffffff" opacity="0.75">
+    <ellipse cx="150" cy="220" rx="90" ry="26"/>
+    <ellipse cx="200" cy="245" rx="60" ry="20"/>
+    <ellipse cx="600" cy="150" rx="70" ry="20"/>
+    <ellipse cx="640" cy="172" rx="45" ry="15"/>
+  </g>
+
+  <!-- Distant hills -->
+  <path d="M0 760 Q 180 660 370 740 T 736 720 L 736 1308 L 0 1308 Z" fill="url(#hill1)"/>
+  <path d="M0 840 Q 240 760 480 830 T 736 810 L 736 1308 L 0 1308 Z" fill="#558b2f" opacity="0.85"/>
+
+  <!-- Main field -->
+  <path d="M0 900 Q 200 850 400 890 T 736 880 L 736 1308 L 0 1308 Z" fill="url(#field)"/>
+
+  <!-- Tree -->
+  <g>
+    <!-- shadow -->
+    <ellipse cx="230" cy="1075" rx="150" ry="26" fill="#1b5e20" opacity="0.35"/>
+    <!-- trunk -->
+    <path d="M222 1080 C 226 990 224 950 228 900 L 244 900 C 246 950 248 990 252 1080 Z" fill="url(#trunk)"/>
+    <!-- branches -->
+    <path d="M228 950 C 200 930 185 915 172 890 L 182 884 C 196 908 212 922 232 938 Z" fill="url(#trunk)"/>
+    <path d="M246 940 C 272 920 288 906 300 884 L 290 878 C 276 898 260 912 240 928 Z" fill="url(#trunk)"/>
+    <!-- foliage -->
+    <circle cx="230" cy="740" r="95" fill="url(#leafA)"/>
+    <circle cx="150" cy="820" r="70" fill="url(#leafB)"/>
+    <circle cx="310" cy="815" r="75" fill="url(#leafB)"/>
+    <circle cx="185" cy="890" r="45" fill="url(#leafA)"/>
+    <circle cx="285" cy="885" r="48" fill="url(#leafA)"/>
+    <!-- highlights -->
+    <circle cx="205" cy="705" r="30" fill="#a5d6a7" opacity="0.5"/>
+    <circle cx="285" cy="780" r="22" fill="#a5d6a7" opacity="0.35"/>
+  </g>
+
+  <!-- Grass tufts -->
+  <g stroke="#8bc34a" stroke-width="4" stroke-linecap="round" opacity="0.6" fill="none">
+    <path d="M90 1010 q 6 -22 2 -34"/>
+    <path d="M110 1030 q 8 -20 14 -30"/>
+    <path d="M520 1080 q 6 -22 2 -34"/>
+    <path d="M545 1100 q 8 -20 14 -30"/>
+    <path d="M620 980 q 6 -22 2 -34"/>
+    <path d="M360 1150 q 8 -20 14 -30"/>
+  </g>
+</svg>
