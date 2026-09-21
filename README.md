@@ -58,11 +58,12 @@ A glass-style modal on the login page collects your email and confirms with a to
 ```
 glass-login-signup-ui/
 │
-├── login.html      → Login page
+├── login.html      → Login page (also served at the site root via index.html)
 ├── signup.html     → Signup page
 ├── style.css       → All styling (glassmorphism + responsive)
 ├── script.js       → All interactive logic
-└── background.svg  → Background illustration (scalable vector)
+├── background.jpg  → Background photo (original)
+└── background.svg  → Lightweight vector alternative background
 ```
 
 ---
@@ -94,7 +95,7 @@ Then visit `http://localhost:8080`.
 ## Customization
 
 - **Colors** — the accent gradient lives in `.auth-btn` in `style.css` (`linear-gradient(90deg, #a6ce39, #3d6d0c)`).
-- **Background** — replace `background.svg` with your own image (any JPG/PNG/SVG — update the `background-image` URL in `.hero`).
+- **Background** — the site uses `background.jpg` (the original photo). A tiny vector version `background.svg` is also included; to switch to it, change the `background-image` URL in `.hero` from `background.jpg` to `background.svg`. You can also use any JPG/PNG/SVG of your own — just update the URL.
 - **Card blur** — tweak `backdrop-filter: blur(18px)` on `.auth-card`.
 - **Validation rules** — all rules are in plain functions at the top of `script.js`.
 
